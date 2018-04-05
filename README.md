@@ -9,5 +9,5 @@ Steps To run the project:
       docker build -t sample-app .
    b) Get a running docker container using docker image built in above step
       docker run -it   -v ${PWD}:/usr/src/app   -v /usr/src/app/node_modules   -p 3000:3000 --rm sample-app
-3) Open your browser to http://localhost:3000/ and you should see the app.
+3) Open your browser to http://localhost:3000/ and you should see the app
    
