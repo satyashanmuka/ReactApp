@@ -22,8 +22,6 @@
   font-size: large;
 }
 
-
-text/css style.css ( ASCII text, with very long lines )
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 body {
@@ -35,7 +33,7 @@ body {
   line-height: 1.89;
   letter-spacing: normal;
   color: #000000;
-  background: url(../assets/images/body_bg_top.png) left top repeat-x;
+  /*background: url(../assets/images/body_bg_top.png) left top repeat-x;*/
   padding: 0;
 }
 .container {
@@ -222,7 +220,7 @@ body {
 }
 .footer_row .footer_top {
   padding: 0 0 25px 0;
-  background: url(../assets/images/footer_border.png) left bottom repeat-x;
+  /*background: url(../assets/images/footer_border.png) left bottom repeat-x;*/
   margin-bottom: 15px;
   width: 100%;
   max-width: 1030px;
