@@ -8,8 +8,8 @@ class App extends Component {
 
 <div className="container">
 
-  <section id="more" className="row">
-    <!-- about row starts here -->
+  
+
       <div className="row about_row">
         <div className="col-md-9 col-sm-9 col-xs-9 col-12 abt_right">
           <p>Sainath was born and brought up in Vanasthalipuram, Hyderabad.<br/><br/>
@@ -22,8 +22,8 @@ class App extends Component {
         </div>
  
       </div>
-    <!-- about row ends here -->
-  </section>
+
+
 </div>
     );
   }
