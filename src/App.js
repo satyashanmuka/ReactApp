@@ -105,6 +105,7 @@ class App extends Component {
                   </div>
                 </div>
                 <button type="submit" name="submit" class="btn btn-success" value="" >Keep me updated !</button>
+                <font color="red">Note: Form validations and submission functionality to be implemented yet</font>
               </form>
 
               <form name="rform" id="shn_form_register_mobile" method="post" role="form" class="mbl_form">
