@@ -12,6 +12,9 @@ import about_img from './assets/images/about_img.jpg';
 import abt_fb from './assets/images/abt_fb.jpg';
 import abt_twitter from './assets/images/abt_twitter.jpg';
 import abt_linkedin from './assets/images/abt_linkedin.jpg';
+import name_icon from './assets/images/name_icon.png';
+import email_icon from './assets/images/email_icon.png';
+import phone_icon from './assets/images/phone_icon.png';
 import * as ReactBootstrap from 'react-bootstrap';
 
 class App extends Component {
@@ -72,6 +75,67 @@ class App extends Component {
               </div>
           {/*<!-- about row ends here -->*/}
         </section>
+        {/*<!-- form row starts here -->*/}
+          <div class="row form_row">
+            <div class="form_block">
+              <h2>Join the revolution today</h2>
+              <form name="rform" id="shn_form_register" method="post" role="form" class="dsk_form">
+                <p>Your Name <span>*</span></p>
+                <div class="row form_row1">
+                  <div class="input-group">
+                    <span class="form_icon name_icon"><img src={name_icon} alt="" /></span>
+                    <span class="fn_blk"><input id="firstname" type="text" class="form-control firstname_input" name="firstname" placeholder="First Name"/></span>
+                    <span class="ln_blk"><input id="lastname" type="text" class="form-control lastname_input" name="lastname" placeholder="Last Name"/></span>
+                  </div>   
+                </div>
+                <div class="row form_row2">
+                  <div class="col-md-6 form_left">
+                    <p>Your Email <span>*</span></p>
+                    <div class="input-group">
+                      <span class="form_icon name_icon"><img src={email_icon} alt="" /></span>
+                      <span class="email_blk"><input id="email" type="text" class="form-control email_input" name="email" placeholder="Email"/></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 form_right">
+                    <p>Your Phone <span>*</span></p>
+                    <div class="input-group">
+                      <span class="form_icon name_icon"><img src={phone_icon} alt="" /></span>
+                      <span class="phone_blk"><input id="phone" type="text" class="form-control phone_input" name="phone"  placeholder="Phone"/></span>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" name="submit" class="btn btn-success" value="" >Keep me updated !</button>
+              </form>
+
+              <form name="rform" id="shn_form_register_mobile" method="post" role="form" class="mbl_form">
+                <p>Your Name <span>*</span></p>
+                <div class="row form_row1">
+                  <div class="input-group">
+                    <span class="form_icon name_icon"><img src={name_icon} alt="" /></span>
+                    <span class="fulln_blk"><input id="firstname" type="text" class="form-control fullname_input" name="firstname" placeholder="Full Name"/></span>
+                  </div>   
+                </div>
+                <div class="row form_row2">
+                  <div class="col-md-6 form_left">
+                    <p>Your Email <span>*</span></p>
+                    <div class="input-group">
+                      <span class="form_icon name_icon"><img src={email_icon} alt="" /></span>
+                      <span class="email_blk"><input id="email" type="text" class="form-control email_input" name="email" placeholder="Email"/></span>
+                    </div>
+                  </div>
+                
+                  <div class="col-md-6 form_right">
+                    <p>Your Phone <span>*</span></p>
+                    <div class="input-group">
+                      <span class="form_icon name_icon"><img src={phone_icon} alt="" /></span>
+                      <span class="phone_blk"><input id="phone" type="text" class="form-control phone_input" name="phone"  placeholder="Phone"/></span>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" name="submit" class="btn btn-success" value="" >Keep me updated !</button>
+              </form>
+            </div>
+          </div>
         {/*<!-- footer row starts here -->*/}
         <div className="row footer_row">
           <div className="row footer_top">
