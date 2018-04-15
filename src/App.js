@@ -46,22 +46,22 @@ class App extends Component {
           <h2><img className="title_left" src={abt_title} /> Watch Live <img className="title_left" src={abt_title} /></h2>
           <iframe width="660" height="415" src="https://www.youtube.com/embed/ojvYcumBWzw" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
         </div>
-        <section id="more" class="row">
+        <section id="more" className="row">
           {/*<!-- about row starts here -->*/}
-            <div class="row about_row">
+            <div className="row about_row">
  
-              <h2><img class="title_left" src={abt_title} />About the founder<img class="title_right" src={abt_title} /></h2>
+              <h2><img className="title_left" src={abt_title} />About the founder<img className="title_right" src={abt_title} /></h2>
  
-              <div class="col-md-3 col-sm-3 col-xs-3 col-12 abt_left">
-                <img class="profile_img" src={about_img} alt="Strong Human Network" />
-                <div class="abt_social_media">
+              <div className="col-md-3 col-sm-3 col-xs-3 col-12 abt_left">
+                <img className="profile_img" src={about_img} alt="Strong Human Network" />
+                <div className="abt_social_media">
                   <a href="https://www.facebook.com/sainathmaratha" target="_blank"><img src={abt_fb} alt="Facebook" /></a>
                   <a href="https://twitter.com/itsimplyme" target="_blank"><img src={abt_twitter} alt="Twitter" /></a>
                   <a href="https://www.linkedin.com/in/sainathm/" target="_blank"><img src={abt_linkedin} alt="Linkedin" /></a>
                 </div>
               </div>
  
-              <div class="col-md-9 col-sm-9 col-xs-9 col-12 abt_right">
+              <div className="col-md-9 col-sm-9 col-xs-9 col-12 abt_right">
                 <p>Sainath was born and brought up in Vanasthalipuram, Hyderabad.<br/><br/>
                   He always believed that he is capable of doing things in his life which have great purpose to it. With a strong belief and conviction, he could convert every challenge into opportunities and succeeded everywhere. Very soon he realized the secret ingredient for his success was self-awareness or understanding one’s own self and loving it. One of his key forte was in management and it was also his dream to be an entrepreneur.  Rigorous hard work and pursuance earned him management degree at Indian Institute of Management Calcutta which he put into practice later by engaging with start-ups. Working with early stage start-ups helped him grow in multiple areas of business most importantly set-up and maintaining fully operational business from the scratch or almost nothing.  His true calling was in business leadership. <br/><br/>
                   At Paytm he was leading Telangana and Andhra Pradesh upcountry during demonetization, also handled large decentralized teams with an ease. Later he realized that his success as a leader was mainly because he could understand people behavior and manage them well. Though the new mantra of success has its roots in the old one: understanding of self. Self-awareness has great impact on individuals, businesses, relationships and the whole ecosystem where the world operates. With Business transformation happening worldwide and India at center of driving this global change people focused companies are need of the hour. Unfortunately, most of the brands are dividing people for market growth rather than unifying people under single brand. This led to genesis of StrongHumanNetwork (SHN).<br/><br/>
