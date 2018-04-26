@@ -251,6 +251,34 @@ label.error {
 .mbl_form {
   display: none;
 }
+
+
+.CreateAccount .form-field {
+  border-right: 0px solid #c4c4c4;
+}
+
+.CreateAccount .form-field input {
+  height: 48px;
+  border: 2px solid #c4c4c4;
+  border-collapse: collapse;
+
+}
+
+.validation-error  {
+  color: red;
+  font-size: 14px;
+
+}
+
+#CreateAccountButton {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 20px;
+
+}
+
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -485,4 +513,5 @@ p {
 .know_more_content h1 {
   font-size: 22px;
 }
+
 }

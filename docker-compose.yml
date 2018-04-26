@@ -1,0 +1,20 @@
+version: '3.0'
+
+services:
+
+  react-app:
+    image: sample-app
+    depends_on:
+      - "node-app"
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - "3000:3000"
+  node-app:
+    image: node-app
+    volumes:
+      - '../../NodeApp/node-app:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - "3001:3001"
