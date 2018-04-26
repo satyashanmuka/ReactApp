@@ -8,7 +8,7 @@ import './App.css';
 import name_icon from './assets/images/name_icon.png';
 import email_icon from './assets/images/email_icon.png';
 import phone_icon from './assets/images/phone_icon.png';
-import * as ReactBootstrap from 'react-bootstrap';
+
 
 const fieldValidations = [
   ruleRunner("firstName", "Name", required),
@@ -58,11 +58,26 @@ class App extends Component {
     if($.isEmptyObject(this.state.validationErrors) === false) return null;
     return this.props.onCreateAccount(this.state);
   }
-    handleSubmit(evt) {
-            evt.preventDefault();
-            return;
 
-    }
+  handleSubmit(evt) {
+    evt.preventDefault();
+    fetch('http://localhost:3001/KeepMeUpdated/api', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+         firstname: "sampleFirstName",
+         lastname: "sampleLastName",
+         email: "emailid",
+         phone: 1234567890
+      }),
+    })
+    .then(response => {return response.text();})
+    .then(text => console.log(text))
+    .catch(error => console.log('parsing failed', error))
+  }
 
   render() {
     return (

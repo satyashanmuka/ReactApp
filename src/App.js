@@ -77,10 +77,10 @@ class App extends Component {
           {/*<!-- about row ends here -->*/}
         </section>
         {/*<!-- form row starts here -->*/}
-          <div class="row form_row">
-            <div class="form_block">
+          <div className="row form_row">
+            <div className="form_block">
               <h2>Join the revolution today</h2>
-                <div class="dsk_form">
+                <div className="dsk_form">
               <CreateAccount onCreateAccount={this.onCreateAccount}/>
                 </div>
             </div>
