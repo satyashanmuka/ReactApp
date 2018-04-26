@@ -59,8 +59,26 @@ class App extends Component {
     return this.props.onCreateAccount(this.state);
   }
     handleSubmit(evt) {
-            evt.preventDefault();
-            return;
+      evt.preventDefault();
+      
+        alert('Hey You !');
+      fetch('http://192.168.99.100:3001/KeepMeUpdated', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstname: 'yourValue',
+          lastname: 'yourOtherValue',
+          email: 'raj',
+          phone: 1111111111
+        })
+      })
+      //.then(response => response.json()) // parses response to JSON
+      .then(parsedjson => console.log('parsedjson', parsedjson))
+      .catch(error => console.log('parsing failed', error))
 
     }
 
